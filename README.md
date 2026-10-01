@@ -14,9 +14,9 @@ Sources come from https://downloads.xiph.org/releases/ and are checked against p
 
 ## Build and validation
 
-Run the manually triggered **Build portable Windows encoder** workflow. Ubuntu 24.04 cross-compiles using distribution-provided MinGW-w64. Windows 2022 validates the resulting executables and exercises mono 24 kbps VBR encoding with `--speech --set-ctl-int 4000=2048` (SIGNAL_VOICE + APPLICATION_VOIP).
+Run the manually triggered **Build portable Windows encoder** workflow. Ubuntu 24.04 cross-compiles using distribution-provided MinGW-w64. Windows 2022 checks that executables run and report the expected versions. Project-specific bitrate, VOIP/VOICE, browser decoding and audio-quality validation belong to the consuming project's local checks, not this build's publication conditions.
 
-Only official GitHub Actions are used, pinned to commit SHAs. No repository secrets are needed; jobs have minimal permissions. The final artifact contains binaries, upstream licenses, source hashes, toolchain versions, smoke-test logs and output SHA-256 hashes, with GitHub build provenance attestation. Artifacts expire after 30 days.
+Only official GitHub Actions are used, pinned to commit SHAs. No repository secrets are needed; jobs have minimal permissions. The final artifact contains binaries, upstream licenses, source hashes, toolchain versions, execution/version checks and output SHA-256 hashes, with GitHub build provenance attestation. Artifacts expire after 30 days.
 
 No Debate source, audio, configuration, credentials or match data is included. No automatic deployment or Release publication occurs.
 

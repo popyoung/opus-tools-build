@@ -39,7 +39,7 @@ jobs:
         with:
           name: unvalidated-build
           path: output/
-      - name: Verify Windows execution and voice encoding
+      - name: Verify Windows execution and versions
         shell: pwsh
         run: ./smoke.ps1
       - uses: actions/attest-build-provenance@43d14bc2b83dec42d39ecae14e916627a18bb661

@@ -1,0 +1,3 @@
+# Git operation record
+
+2026-10-01 Asia/Shanghai: User explicitly authorized a separate public repository for building Opus. Planned operations in this directory only: git init -b main; git add README.md git-operations.md build.sh smoke.ps1 .github/workflows/build.yml; git diff --cached --check; git commit; gh repo create popyoung/opus-tools-build --public --source . --remote origin --push. No Debate files or credentials are included. Planned follow-up: manual workflow dispatch, status/log checks, artifact download to Z drive and verified binary copy to D:/DevelopTools/opus. Do not publish a Release automatically.
